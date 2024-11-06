@@ -114,7 +114,7 @@ const clickHandler = (e) => {
     quizIndex++;
 
     if (quizIndex < quiz.length) {
-
+        Setup();
     } else {
         alert(`Quiz completed! Your score is ${score} / ${quiz.length}.`);
     }
@@ -126,7 +126,6 @@ let index = 0;
 while (index < buttonLength) {
     $buttons[index].addEventListener("click", (e) => {
         clickHandler(e);
-        Setup();
     });
     index++;
 }
